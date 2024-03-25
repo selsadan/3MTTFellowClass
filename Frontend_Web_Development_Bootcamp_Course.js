@@ -25,14 +25,21 @@
 // const myThirdVariable = { firstProperty: 'So help me LORD Almighty'};
 
 
+// const variable1 = 10;
+// const variable2 = variable1;
+// const variable3 = 'Zach';
+// const variable4 = {
+//     variableType: 'object',
+//     variableValue: 'some value',
+// };
+// const variable5 = (function(){
+//     return 'Hello, my name is ';
+// })();
+// const variable6 = variable5 + variable3;
+
+
 const variable1 = 10;
-const variable2 = variable1;
-const variable3 = 'Zach';
-const variable4 = {
-    variableType: 'object',
-    variableValue: 'some value',
-};
-const variable5 = (function(){
-    return 'Hello, my name is ';
-})();
-const variable6 = variable5 + variable3;
+const variable2 = 'Coding is fun';
+const variable3 = true;
+
+typeof variable1;
