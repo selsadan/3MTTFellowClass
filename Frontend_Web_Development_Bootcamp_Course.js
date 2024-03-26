@@ -38,8 +38,14 @@
 // const variable6 = variable5 + variable3;
 
 
-const variable1 = 10;
-const variable2 = 'Coding is fun';
-const variable3 = true;
+// const variable1 = 10;
+// const variable2 = 'Coding is fun';
+// const variable3 = true;
 
-typeof variable1;
+// typeof variable1;
+
+
+const firstNumber = '10';
+const secondNumber = 10;
+
+const showResult = Number(firstNumber) + secondNumber
