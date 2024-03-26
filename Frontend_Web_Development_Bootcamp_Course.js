@@ -60,3 +60,17 @@
 // Object
 
 const objectVariable = {prop1: 3032, prop2: 'String', prop3: 424};
+
+// Nested Object
+
+const nestedObject = {
+	nestedObject1: {
+		nestedObject2 : {
+			nestedObject3: {
+				nestedObject4: {
+					Prop1: 'I now get it'
+				}
+			}
+		}
+	}
+}
