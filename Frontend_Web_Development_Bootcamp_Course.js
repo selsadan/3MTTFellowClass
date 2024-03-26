@@ -45,7 +45,15 @@
 // typeof variable1;
 
 
-const firstNumber = '10';
-const secondNumber = 10;
+// const firstNumber = '10';
+// const secondNumber = 10;
 
-const showResult = Number(firstNumber) + secondNumber
+// const showResult = Number(firstNumber) + secondNumber
+
+
+
+// Array
+
+const firstArray = [9, 42, 323,421, 32442,];
+const differentDataTypes = [56, 'yes', false, {property: 'value'}, 564, [332, 6675, 89]]; 
+
