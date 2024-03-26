@@ -54,6 +54,9 @@
 
 // Array
 
-const firstArray = [9, 42, 323,421, 32442,];
-const differentDataTypes = [56, 'yes', false, {property: 'value'}, 564, [332, 6675, 89]]; 
+// const firstArray = [9, 42, 323,421, 32442,];
+// const differentDataTypes = [56, 'yes', false, {property: 'value'}, 564, [332, 6675, 89]]; 
 
+// Object
+
+const objectVariable = {prop1: 3032, prop2: 'String', prop3: 424};
