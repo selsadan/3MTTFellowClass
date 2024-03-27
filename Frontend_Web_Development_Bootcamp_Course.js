@@ -78,3 +78,12 @@
 const functionVariable = function(){
     return 'Its working'
 }
+
+// Exercise
+
+const objectVariable = {
+    property1: 'I am property one',
+    property2: 'I am property two',
+    property3: [10, 20, 30]
+}
+
