@@ -87,3 +87,10 @@ const objectVariable = {
     property3: [10, 20, 30]
 }
 
+
+// JS Operators
+    //Arithmetic Operators
+
+const result = 30 + 40 / 2;
+
+let startingNumber = 0;
