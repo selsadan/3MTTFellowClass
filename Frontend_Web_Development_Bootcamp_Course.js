@@ -113,3 +113,7 @@ const result1 = 20 === 20;
 
 const result2 = 20 > 10;
 
+const numberValue = 20;
+const stringValue = '20';
+
+const resulting = numberValue == stringValue;
