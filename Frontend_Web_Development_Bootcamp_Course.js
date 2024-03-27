@@ -106,3 +106,10 @@ x = x + 10;
 let y = 50;
 
 y += 10;
+
+// Comparism Operators
+
+const result1 = 20 === 20;
+
+const result2 = 20 > 10;
+
