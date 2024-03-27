@@ -117,3 +117,10 @@ const numberValue = 20;
 const stringValue = '20';
 
 const resulting = numberValue == stringValue;
+
+const numberValue1 = 20;
+const stringValue2 = '20';
+
+const result3 = numberValue === stringValue;
+
+
