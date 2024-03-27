@@ -123,4 +123,13 @@ const stringValue2 = '20';
 
 const result3 = numberValue === stringValue;
 
+const numberValue2 = 30;
+const stringValue1 = '30';
+
+const result4 = numberValue2 != stringValue1;
+
+const numberValue3 = 30;
+const stringValue3 = '30';
+
+const result5 = numberValue2 != stringValue1;
 
