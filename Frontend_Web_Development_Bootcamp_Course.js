@@ -94,3 +94,15 @@ const objectVariable = {
 const result = 30 + 40 / 2;
 
 let startingNumber = 0;
+
+    // Assignment Operators
+
+let x = 50;
+
+x = x + 10;
+
+// This can be re-written in different way i.e
+
+let y = 50;
+
+y += 10;
