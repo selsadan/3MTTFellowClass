@@ -133,3 +133,8 @@ const stringValue3 = '30';
 
 const result5 = numberValue2 != stringValue1;
 
+// Numeric Comparism operators: Using the > < >= and <= eg:
+	20 > 10 
+	10 < 20 
+	20 >= 10 
+	10 <= 20 
