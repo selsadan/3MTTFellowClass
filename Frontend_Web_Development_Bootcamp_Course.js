@@ -304,3 +304,35 @@ if (jsExpression){
 	console.log('The expression is false, firstNumber 0 or less');
 }
 
+
+// Using the Switch Statement:
+
+const colors = ['orange', 'green', 'yellow', 'purple', 'blue'];
+
+// Gets a random between 0 to 4 and stores the number in a variable 
+
+const randomIndex = Math.floor(Math.random() * colors.length);
+
+/*
+	Remember, to get a value from an array, we use bracket notation
+	For eg: to get green: we use `color[1]`
+
+	since randonIndex will be a random number from 0 to 4, we can
+	pass this in our index to retrieve a random color from the array
+*/
+
+const randomColor = colors[randomIndex];
+
+// Conditionals
+
+if (randomColor === 'orange'){
+	console.log('The color is orange');
+} else if(randomColor === 'green'){
+	console.log('The color is green');
+} else if (randomColor === 'purple'){
+	console.log('The color is purple');
+} else if(randomColor === 'blue'){
+	console.log('The color is blue');
+} else {
+	console.log('The color is yellow');
+}
