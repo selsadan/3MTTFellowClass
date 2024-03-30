@@ -142,3 +142,8 @@ const result5 = numberValue2 != stringValue1;
 // Ternary operator: Eg:
 
 	const result6 = 20 === 20 ? 'Values are equal' : 'Values are not equal' 
+
+
+// Logical Operators
+
+const result7 = 10 === 10 && 20 === 20; 
