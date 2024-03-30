@@ -175,3 +175,14 @@ const canUserPerformAction = isUserLoggedIn && doesUserHasPermissions;
 	step4 = 'yes' === 'no';
 	step5 = step3 || step4;
     step6 = !step5
+
+// Exercise
+
+	// 1.
+	const numberVariable = 0;
+	
+	numberVariable++;
+	numberVariable++;
+	numberVariable++;
+
+	console.log(numberVariable); 
