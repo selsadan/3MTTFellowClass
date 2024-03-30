@@ -179,15 +179,15 @@ const canUserPerformAction = isUserLoggedIn && doesUserHasPermissions;
 // Exercise
 
 	// 1.
-	const numberVariable = 0;
+	// const numberVariable = 0;
 
-	numberVariable + 1;
+	// numberVariable + 1;
 	
-	numberVariable++;
-	numberVariable++;
-	numberVariable++;
+	// numberVariable++;
+	// numberVariable++;
+	// numberVariable++;
 
-	console.log(numberVariable); 
+	// console.log(numberVariable); 
 
 
 // Exercise 2 
@@ -212,3 +212,13 @@ const resultOfSnippetTwo = firstNumber1 === secondNumber1;
 console.log(resultOfSnippetTwo);
 
 // ==== End Snippet 2 ===
+
+
+// Exercise 3 
+
+const expression1 = 100 % 50;
+const expression2 = 100 / 50;
+const expression3 = expression1 < expression2;
+const expression4 = expression3 && 33 + 5 === 305;
+const expression5 = !expression4;
+
