@@ -152,6 +152,14 @@ const result7 = 10 === 10 && 20 === 20;
 
 // || (OR Operator)
 
-const firstOr = 12 === 12 || 123 === 1; 
-const secondOr = 123 === 1 || 12 === 12; 
-const thirdOr = 14 === 12 || 12 === 12; 
+    const firstOr = 12 === 12 || 123 === 1; 
+    const secondOr = 123 === 1 || 12 === 12; 
+    const thirdOr = 14 === 12 || 12 === 13;
+
+// Practical Example to use this operators is real life
+
+const isUserLoggedIn = true;
+
+const doesUserHasPermissions = false;
+
+const canUserPerformAction = isUserLoggedIn && doesUserHasPermissions; 
