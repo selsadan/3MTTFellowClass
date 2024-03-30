@@ -179,16 +179,23 @@ const canUserPerformAction = isUserLoggedIn && doesUserHasPermissions;
 // Exercise
 
 	// 1.
-	// const numberVariable = 0;
-
-	// numberVariable + 1;
+	const numberVariable = 0;
 	
-	// numberVariable++;
-	// numberVariable++;
-	// numberVariable++;
+	numberVariable++;
+	numberVariable++;
+	numberVariable++;
 
-	// console.log(numberVariable); 
+	console.log(numberVariable); 
 
+	// The answer to this solution is that the when you see the const JS word to declare a variable, you cannot changet the value of the variable, but if you use let JS word, you woul be able to change the variable
+	// Solution 
+	let numberVariable1 = 0;
+
+	numberVariable1++;
+	numberVariable1++;
+	numberVariable1++;
+
+	console.log(numberVariable1);
 
 // Exercise 2 
 
@@ -221,4 +228,79 @@ const expression2 = 100 / 50;
 const expression3 = expression1 < expression2;
 const expression4 = expression3 && 33 + 5 === 305;
 const expression5 = !expression4;
+
+!((100 % 50 < 100 / 50 ) && (33 + 5 === 305)) 
+
+// Exercise 4
+
+const myObj = {
+	prop1: 'First Value',
+	prop2: 20
+};
+
+const myArray = [40, 50, 2 ];
+
+const getResult = myObj.prop1 === (myArray[0] / myArray[2]);
+
+// To soleve this: 
+	// myObj.prop1 is 20
+	// myArray[0] is 40
+	// myArray[2] is 2
+	// So, (myArray[0] / myArray[2]) is evaluated to: 40 / 2 = 20
+	// So, 20 === 20 result to true;
+
+
+// Exercise 5
+
+const myObj1 = {
+	nestedObj1: {
+		price: 100,
+		quantity: 5
+	},
+	nestedObj2: {
+		price: 150,
+		quantity: 2
+	}
+};
+
+
+const myArray1 = [myObj1.nestedObj1, myObj1.nestedObj2];
+
+const getResult1 = (myArray[0].price * myArray[0].quantity) > (myArray[1].price * myArray[1].quantity);
+
+// The answer is true, you've got to break each of the expression and know how each expression access the object and array
+// After that, replace each expression in it value place and evaluate
+// i.e = (100 * 5) > (150 * 2)
+// getResult = (500) > (300) which answer is true
+
+// JS Conditionals 
+
+const firstNumber2 = 20;
+const secondNumber3 = 10;
+const jsExpression = firstNumber2 > secondNumber3; // true
+
+// Only using if statement (no "else" statement require here )
+
+if (jsExpression) {
+	console.log('This expression is true');
+}
+
+// An if else statement 
+
+if (jsExpression){
+	console.log('This expression is true');
+} else {
+	console.log('This expression is false');
+}
+
+// Adding another 'code path' with 'else if'
+// Hint: You can use as many 'if else' statement as you want
+
+if (jsExpression){
+	console.log('The expression is true');
+} else if (firstNumber2 > 0){
+	console.log('The expression is false and the firstNumber2 is greater than 0');
+} else {
+	console.log('The expression is false, firstNumber 0 or less');
+}
 
