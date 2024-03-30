@@ -163,3 +163,15 @@ const isUserLoggedIn = true;
 const doesUserHasPermissions = false;
 
 const canUserPerformAction = isUserLoggedIn && doesUserHasPermissions; 
+
+// Combing the operators together:
+
+	const result8 = !(((40 / 20) === 2 && true) || ('yes' === 'no'));
+	
+// In the example above when you run the variable, it returns a false value. To read the expression on the right side is a bit bulky, let's try break them into smaller readable code:
+	step1 = 40 / 20;
+	step2 = step1 === 2;
+	step3 = step2 && true; 
+	step4 = 'yes' === 'no';
+	step5 = step3 || step4;
+    step6 = !step5
