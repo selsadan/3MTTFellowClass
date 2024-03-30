@@ -138,3 +138,7 @@ const result5 = numberValue2 != stringValue1;
 	10 < 20 
 	20 >= 10 
 	10 <= 20 
+
+// Ternary operator: Eg:
+
+	const result6 = 20 === 20 ? 'Values are equal' : 'Values are not equal' 
