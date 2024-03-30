@@ -336,3 +336,24 @@ if (randomColor === 'orange'){
 } else {
 	console.log('The color is yellow');
 }
+
+
+switch (randomColor === 'orange'){
+	case 'orange': 
+	console.log('The color is orange');
+	break;
+	case 'orange': 
+	console.log('The color is green');
+	break;
+	case 'orange': 
+	console.log('The color is purple');
+	break;
+	case 'orange': 
+	console.log('The color is blue');
+	break 
+	case 'orange': 
+	console.log('The color is yellow');
+	break;
+	default: 
+	console.log('You cannot find your color here!')
+}
