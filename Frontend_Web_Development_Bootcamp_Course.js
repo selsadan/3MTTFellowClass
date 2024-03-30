@@ -180,9 +180,35 @@ const canUserPerformAction = isUserLoggedIn && doesUserHasPermissions;
 
 	// 1.
 	const numberVariable = 0;
+
+	numberVariable + 1;
 	
 	numberVariable++;
 	numberVariable++;
 	numberVariable++;
 
 	console.log(numberVariable); 
+
+
+// Exercise 2 
+
+// ===== SNIPPET 1 ===
+const firstNumber = 20;
+const secondNumber = '20';
+
+const resultOfSnippetOne = firstNumber === secondNumber;
+
+console.log(resultOfSnippetOne);
+
+// ===== End Snippet 1 ====
+
+// ====== SNIPPET 2 =====
+
+const firstNumber1 = 20;
+const secondNumber2 = '20';
+
+const resultOfSnippetTwo = firstNumber1 === secondNumber1;
+
+console.log(resultOfSnippetTwo);
+
+// ==== End Snippet 2 ===
