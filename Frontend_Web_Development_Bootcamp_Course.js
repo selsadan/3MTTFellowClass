@@ -146,4 +146,12 @@ const result5 = numberValue2 != stringValue1;
 
 // Logical Operators
 
+// && (AND Operator)
+
 const result7 = 10 === 10 && 20 === 20; 
+
+// || (OR Operator)
+
+const firstOr = 12 === 12 || 123 === 1; 
+const secondOr = 123 === 1 || 12 === 12; 
+const thirdOr = 14 === 12 || 12 === 12; 
