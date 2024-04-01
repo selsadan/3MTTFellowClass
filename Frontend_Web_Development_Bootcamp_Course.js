@@ -405,3 +405,14 @@ console.log(postAuthor);
 console.log(postPublishDate);
 console.log(postContent);
 
+// Another example:
+const arr = [3323, 3232,33232424, 422442352423, 32323233, 'fsnfmf', 'fnsnfsfnf', 'fsmfsfsfsf', 'fsjfjfkfskfsoworwkirw', true, false, false, 332323, 999494, 94994, true, 'nfnnfk', false, 44942, 'fnfnfnf', true];
+
+for (let i = 0; i < arr.length; i++){
+  if(typeof arr[i] === 'string'){
+		console.log(arr[i]);
+	}
+}
+
+// In the above example, it iterate the loop and print only values that have  string data types.
+// Notice how we use arr.length to allow the conditions iterate the exact number of times all the values of the array are presented.
