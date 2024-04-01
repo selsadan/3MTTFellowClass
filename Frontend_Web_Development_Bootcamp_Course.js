@@ -362,3 +362,46 @@ switch (randomColor){
 // Looping
 
 const a = [20, 40, 60];
+
+// To print each value of the array: you got to type in the code below:
+
+a[0]; // result to 20
+a[1]; // result to 40
+a[2]; // result to 60
+
+// Let's you have 100 items in the array to print, would you use the code above in order to print each value?
+// The answer is NO! This is because it's the best practices, let learn the best practices below:
+
+const blogPosts = [
+	{
+		title: 'What is JS?',
+		authour: 'Zach Golwitzer',
+		publishDate: 'Dec 20, 2020',
+		content: 'some post here'
+	},
+	{
+		title: 'How do arrays work?',
+		authour: 'Zach Golwitzer',
+		publishDate: 'Jan 1, 2021',
+		content: 'some post here'
+	},
+	{
+		title: 'How long those it takes to learn coding?',
+		authour: 'Zach Golwitzer',
+		publishDate: 'Jan 20, 2021',
+		content: 'some post here'
+	},
+];
+
+for (let i = 0; i < blogPosts.length; i++){
+	const postTitle = blogPosts[i].title;
+	const postAuthor = blogPosts[i].authour;
+	const postPublishDate = blogPosts[i].publishDate;
+	const postContent = blogPosts[i].content;
+}
+
+console.log(postTitle);
+console.log(postAuthor);
+console.log(postPublishDate);
+console.log(postContent);
+
