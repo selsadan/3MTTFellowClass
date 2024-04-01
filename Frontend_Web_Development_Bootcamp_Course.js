@@ -338,7 +338,7 @@ if (randomColor === 'orange'){
 }
 
 
-switch (randomColor === 'orange'){
+switch (randomColor){
 	case 'orange': 
 	console.log('The color is orange');
 	break;
@@ -357,3 +357,8 @@ switch (randomColor === 'orange'){
 	default: 
 	console.log('You cannot find your color here!')
 }
+
+
+// Looping
+
+const a = [20, 40, 60];
