@@ -490,3 +490,30 @@ function myFunction () {
 // Call/Invoke a fucntion
 
 myFunction();
+
+// Immediately invoke function: This fucntion immediately invoke the fucntion.
+
+(function immediatelyInvokeFunction(){
+	console.log('Im usimg an immediately invoked function')
+}) 
+();
+
+// Function parameters and arguments:
+//Function parameters are values pass when declaring a function:
+
+function myFunction(param1, param2){
+	console.log(param1);
+	console.log(param12;
+}
+
+//Function arguments are values pass when invoking or calling a function:
+
+myFunction(28, 'This is an argument');
+
+// Anonymous function
+
+const anonymousFunction = function (){
+	console.log('This is an anonymous function');
+}
+
+anonymousFunction();
