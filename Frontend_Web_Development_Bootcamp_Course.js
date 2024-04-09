@@ -437,6 +437,9 @@ for (let i = 0; i < myData.length; i++){
 	const getName = myData[i].name;
 }
 
+
+// Don't forget when you wish to console.log the ouput, the console.log block of code should inside the for(){} function.
+// Don't write it outside the for() function.
 const useArray = [
 	{firstName: 'Daniel',
 	 secondName: 'Datuhung',
@@ -454,6 +457,23 @@ const useArray = [
 
 for (let i = 0; i < useArray.length; i++){
 	const printFirstName = useArray[i].firstName;
-	const printSecondName = useArray[i].secondNameName;
+	const printSecondName = useArray[i].secondName;
 	const printAge = useArray[i].age;
+}
+
+
+const useArray = [
+    { firstName: 'Daniel', secondName: 'Datuhung', age: 28 },
+    { firstName: 'Selsa', secondName: 'Daniel', age: 29 },
+    { firstName: 'Father', secondName: 'Amazing', age: 28 },
+];
+
+for (let i = 0; i < useArray.length; i++) {
+    const printFirstName = useArray[i].firstName;
+    const printSecondName = useArray[i].secondName; // Removed extra 'Name' here
+    const printAge = useArray[i].age;
+
+    console.log("First Name:", printFirstName);
+    console.log("Second Name:", printSecondName);
+    console.log("Age:", printAge);
 }
