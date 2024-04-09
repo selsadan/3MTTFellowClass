@@ -437,4 +437,23 @@ for (let i = 0; i < myData.length; i++){
 	const getName = myData[i].name;
 }
 
-console.log(getName);
+const useArray = [
+	{firstName: 'Daniel',
+	 secondName: 'Datuhung',
+	 age: 28
+	},
+	{firstName: 'Selsa',
+	 secondName: 'Daniel',
+	 age: 29
+	},
+	{firstName: 'Father',
+	 secondName: 'Amazing',
+	 age: 28
+	},
+];
+
+for (let i = 0; i < useArray.length; i++){
+	const printFirstName = useArray[i].firstName;
+	const printSecondName = useArray[i].secondNameName;
+	const printAge = useArray[i].age;
+}
