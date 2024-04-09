@@ -517,3 +517,59 @@ const anonymousFunction = function (){
 }
 
 anonymousFunction();
+
+// Arrow function:
+
+const arrowFunction = () => {
+	console.log('This is an arrow function');
+}
+	   
+arrowFunction();
+
+
+const numberReturnFunction = () => {
+	return 39;
+}
+
+numberReturnFunction();
+
+const stringReturnFunction = () => {
+	return 'This is string return function';
+}
+
+stringReturnFunction();
+
+const booleanReturnFunction = () => {
+	return true;
+}
+
+booleanReturnFunction();
+
+const variableAndExpressionReturnFunction = () => {
+	const a = 20;
+	return a < 30 // return true
+}
+
+variableAndExpressionReturnFunction();
+
+const expressionFunction = () => {
+    let a = 39;
+    return a > 29;
+}
+
+const printFunction = expressionFunction(); 
+
+console.log(printFunction);
+
+
+// Using more than one return statement
+
+const numberGlobal = 30
+let returnFunction = () => {
+	if(numberGlobal > 50){
+	return 'Global is greater than 50'
+	}
+return 'The Global variable is not greater than 50'
+}
+
+returnFunction();
