@@ -477,3 +477,16 @@ for (let i = 0; i < useArray.length; i++) {
     console.log("Second Name:", printSecondName);
     console.log("Age:", printAge);
 }
+
+
+// Functions: To use a function, you must 1st: Declare the function and 2nd: Invoke/Call the function
+
+// Declare a function below:
+
+function myFunction () {
+	console.log('This is actually not my first function');
+}
+
+// Call/Invoke a fucntion
+
+myFunction();
