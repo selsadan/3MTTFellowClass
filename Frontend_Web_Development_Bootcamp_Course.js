@@ -416,3 +416,25 @@ for (let i = 0; i < arr.length; i++){
 
 // In the above example, it iterate the loop and print only values that have  string data types.
 // Notice how we use arr.length to allow the conditions iterate the exact number of times all the values of the array are presented.
+
+
+const myData = [
+	{name: 'Daniel',
+	 station: 'school',
+	 age: 28 
+	},
+	{name: 'Selsa',
+	 station: 'work',
+	 age: 29
+	},
+	{name: 'Davou',
+	 station: 'Home',
+	 age: 30
+	},
+];
+
+for (let i = 0; i < myData.length; i++){
+	const getName = myData[i].name;
+}
+
+console.log(getName);
