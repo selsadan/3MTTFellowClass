@@ -573,3 +573,27 @@ return 'The Global variable is not greater than 50'
 }
 
 returnFunction();
+
+
+// Function together with objects
+
+function myFunction(){
+	return 20;
+}
+
+const aliasVariable = myFunction();
+
+// If you can assign function to variables, this also means you can assign functions to object.
+// To declare a function inisde an object:
+const myObject = {
+	prop1: 'Selsa Daniel',
+	prop2: myFunction
+}
+
+// In order to access the function, you need to access the property of the object. Eg:
+
+myObject.prop2()
+
+// Notice the () sign used after accessing the property of the object, 
+// this is done in order to immediately execute the function.
+
