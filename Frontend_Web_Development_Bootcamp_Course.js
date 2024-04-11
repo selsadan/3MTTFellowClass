@@ -597,3 +597,22 @@ myObject.prop2()
 // Notice the () sign used after accessing the property of the object, 
 // this is done in order to immediately execute the function.
 
+// Using JS built in function
+//Using strings replace method:
+
+const myString = 'Selse'; // Let's use the object function string method to correct the mispelled Selse to Selsa
+
+myString.replace('e', 'a');
+
+//When you call the myString variable, the replace value is not stored in the variable value
+// The replace function object method only returns the replaced value
+//To store the replace function object method, create a new variable 
+
+const newName = myString.replace('e', 'a');
+
+// Now the value has been store in the newName variable
+// Calling newName variable will show the new created replace function object, eg
+
+newName
+
+// On calling this: Salse will output instead of selse
