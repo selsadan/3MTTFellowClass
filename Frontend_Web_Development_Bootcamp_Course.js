@@ -616,3 +616,15 @@ const newName = myString.replace('e', 'a');
 newName
 
 // On calling this: Salse will output instead of selse
+
+// Using toUpperCase string object function
+
+myString.toUpperCase();
+
+// We can also chain the method together. Using the . notation to chain more than one objdrct function. eg:
+
+const str = 'hello world',
+
+const result = str.toUpperCase().split(''); // It uses double notation and store value into a new variable
+
+result.indexOf ('WORLD'); // It uses an array object method and stores the value as an array
