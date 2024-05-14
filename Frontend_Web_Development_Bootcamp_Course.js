@@ -794,3 +794,11 @@ const string1 = 'my favorite food is streak';
 const string2 = 'my favorite thing todo is code'
  regex1.test(string1);
  regex1.test(string2);
+
+ // Regular Expression is case sensitive 
+
+ const regex1 = new RegExp('FavoritE');
+const string1 = 'my favorite food is streak';
+const string2 = 'my favorite thing todo is code'
+ regex1.test(string1);
+ regex1.test(string2);
