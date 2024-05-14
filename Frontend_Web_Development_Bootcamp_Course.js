@@ -784,3 +784,13 @@ const string1 = 'my favorite food is streak';
 const string2 = 'my favorite thing todo is code'
  regex.test(string1);
  regex.test(string2);
+
+
+// Regular Expression (comparing a word)
+
+
+const regex1 = new RegExp('favorite');
+const string1 = 'my favorite food is streak';
+const string2 = 'my favorite thing todo is code'
+ regex1.test(string1);
+ regex1.test(string2);
