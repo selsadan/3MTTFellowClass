@@ -771,8 +771,16 @@ localStorage
 
  // Regular Expression 
 
- const emailValodator = new RegExp('^.+@.+\..+$');
+ const emailValidator = new RegExp('^.+@.+\..+$');
 
  const userInput = 'fffmfkdkf@g';
 
- const isValid = emailValodator.test(userInput);
+ const isValid = emailValidator.test(userInput);
+
+// Regular Expression 
+
+const regex = new RegExp('g');
+const string1 = 'my favorite food is streak';
+const string2 = 'my favorite thing todo is code'
+ regex.test(string1);
+ regex.test(string2);
