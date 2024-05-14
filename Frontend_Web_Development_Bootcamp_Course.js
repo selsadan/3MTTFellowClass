@@ -628,3 +628,151 @@ const str = 'hello world',
 const result = str.toUpperCase().split(''); // It uses double notation and store value into a new variable
 
 result.indexOf ('WORLD'); // It uses an array object method and stores the value as an array
+
+
+// Exercise on codewars
+
+function basicOp(operation, value1, value2){
+	let result;
+	switch(operation){
+		case '+':
+			result = value1 + value2;
+		break;
+		case '-':
+			result = value1 - value2;
+		break;
+		case '*':
+			result = value1 * value2;
+		break;
+		case '/':
+			result = value1 / value2;
+		break;
+	}
+	return result;
+}
+
+// eval() is JS build in function that evaluates arguments 
+
+// Starting Repeat 
+
+function repearStr(numberOfRepeat, str){
+	
+	let starterString = '';
+
+	for (let i = 0; i = numberOfRepeat.length; i++){
+		starterString = starterString + str; 
+	}
+	return starterString
+}
+
+// Convert a string to array
+function stringToArray(string){
+	return string.split(' ');
+}
+
+// Remove string spaces
+function noSpace(str){
+
+	const vari = str.split(' ');
+	let newArray = [];
+
+	for(let i = 0; i = vari.length; i++){
+
+		const trimmedArray = vari[i].trim();
+
+		const result = newArray.push(trimmedArray);
+	}
+
+	const fResult = result.join('');
+	return fResult; 
+}
+
+// Beginner lost without a map
+
+function map(arr){
+	arr.map((arrItem) =>{
+		result =  arrItem * 2;
+	});
+
+	return result;
+}
+
+// Is he gonna survive?
+
+function hero(bullets, dragon){
+	return bullets / dragon >= 2;
+ }
+
+//Array plus array
+ function arrayAddArray(ar1, ar2){
+	let sum = 0;
+
+	for (let i = 0; i < arg1.length; i++){
+		let arg1Value = ar1[i];
+		let arg2Value = ar2[i];
+
+		let allValue = arg1Value + arg2Value
+
+		sum = allValue + sum
+	}
+
+	return sum;
+ }
+
+ //Century from year 
+
+ function century(year){
+	return Math.ceil(year/100);
+ }
+
+ //Cat years, dog years
+
+ let catYearsDogYears = function(humanYears){
+	let catsAge;
+	let dogsAge;
+
+	if(humanYears === 1){
+		return [humanYears, 15, 15];
+	}
+
+	if(humanYears === 2){
+		return [humanYears, 24, 24];
+	}
+
+	const excessYears = humanYears - 2;
+	const extraCatYears = excessYears * 4;
+	const extraDogYears = excessYears * 5;
+
+	return [humanYears, 24 + extraCatYears, 24 + extraDogYears];
+ }
+
+ //Total amount in points
+
+ function points(gameArray){
+	let gamePoint = 0;
+ ]
+ 
+	for (let i = 0; i < gameArray.length; i++){
+		let value = gameArray[i];
+		let parts = value.split(':');
+
+		const x = parts[0];
+		const y = parts[1];
+
+		if(x > y){
+			gamePoint = gamePoint + 3;
+		} else if(x < y){
+			gamePoint = gamePoint + 1;
+		}
+	}
+localStorage
+	return gamePoint;
+ }
+
+ // Regular Expression 
+
+ const emailValodator = new RegExp('^.+@.+\..+$');
+
+ const userInput = 'fffmfkdkf@g';
+
+ const isValid = emailValodator.test(userInput);
