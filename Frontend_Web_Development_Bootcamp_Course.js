@@ -799,6 +799,12 @@ const string2 = 'my favorite thing todo is code'
 
  const regex1 = new RegExp('FavoritE');
 const string1 = 'my favorite food is streak';
-const string2 = 'my favorite thing todo is code'
+const string2 = 'my favorite thing to do is code'
  regex1.test(string1);
  regex1.test(string2);
+
+ // Continuation 
+const string1 = 'my favorite food is streak';
+const string2 = 'my favorite thing to do is code'
+
+/./.test(string1); // use for all characters 
