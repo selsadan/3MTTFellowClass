@@ -810,3 +810,4 @@ const string2 = 'my favorite thing to do is code'
 /./.test(string1); // use for matching all characters 
 /\d/.test(string1); // use for matching all numbers. This is also equivalent to writing it /[0-9]/.test(string1)
 /\s/.test(string1); // use to match all white space 
+/\w/.test(string1); // use to match all numbers and letters  i.e alpha numeric
