@@ -807,4 +807,7 @@ const string2 = 'my favorite thing to do is code'
 const string1 = 'my favorite food is streak';
 const string2 = 'my favorite thing to do is code'
 
-/./.test(string1); // use for all characters 
+/./.test(string1); // use for matching all characters 
+/\d/.test(string1); // use for matching all numbers 
+
+
