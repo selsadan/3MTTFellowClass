@@ -1208,3 +1208,34 @@ const randomIndex = Math.floor(Math.random() * arr.length)
 undefined
 arr[randomIndex]
 "food" 
+
+//Type of Errors in JS
+
+//ReferenceError
+
+const myNumber = 20;
+undefined
+myNumber
+20
+anotherNumber
+Uncaught ReferenceError: anotherNumber is not defined
+    <anonymous> debugger eval code:1
+debugger eval code:1:1
+
+//SyntaxError
+const myObject = {
+    prop1: 'Value1';
+    prop2: 'value2';
+};
+Uncaught SyntaxError: missing } after property list
+debugger eval code:2:17note: { opened at line 1, column 18debugger eval code:1:18
+
+//TypeError
+const myNumber2 = 40;
+undefined
+myNumber2
+40
+myNumber2.toUpperCase();
+Uncaught TypeError: myNumber2.toUpperCase is not a function
+    <anonymous> debugger eval code:1
+debugger eval code:1:11
