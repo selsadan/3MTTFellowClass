@@ -811,3 +811,400 @@ const string2 = 'my favorite thing to do is code'
 /\d/.test(string1); // use for matching all numbers. This is also equivalent to writing it /[0-9]/.test(string1)
 /\s/.test(string1); // use to match all white space 
 /\w/.test(string1); // use to match all numbers and letters  i.e alpha numeric
+
+
+// JS Replace String Method
+const myString = 'My Dog jumps over the bed. My dog is a bad Dog';
+undefined
+const showResult = myString.replaceAll(/[Dd]{1}og/g, 'cat');
+undefined
+showResult
+"My cat jumps over the bed. My cat is a bad cat"
+
+//JS UpperCase String Method
+const showUpperCase = myString.toUpperCase();
+undefined
+showUpperCase
+"MY DOG JUMPS OVER THE BED. MY DOG IS A BAD DOG"
+
+// JS Substring String Method
+const showSubstring = myString.substring(5, 7);
+undefined
+showSubstring
+"g "
+
+const showSubstring2 = myString[0].toUpperCase() + myString.substring(1, myString.length);
+undefined
+showSubstring2
+"My Dog jumps over the bed. My dog is a bad Dog"
+
+const someRegularWord = 'some lower case word';
+undefined
+const showResultOfSubstring = someRegularWord[0].toUpperCase() + someRegularWord.substring(1, someRegularWord.length);
+undefined
+showResultOfSubstring
+"Some lower case word" 
+
+
+// JS Trim Sring Method
+const externalData = [
+	{
+		title: 'How to code	',
+		author: '	Zach'
+	},
+	{
+		title: '	What is Vim?',
+		author: '	Zach'
+	},
+	{
+		title: '	How do loops work in JavaScript?	',
+		author: '	zach	'
+	}
+];
+
+
+for (let i = 0; i < externalData.length; i++){
+	const currentTitle = externalData[i].title;
+	const currentAuthor = externalData[i].author;
+
+	externalData[i].title = currentTitle.trim();
+	externalData[i].author = currentAuthor.trim();
+}
+
+<- Array(3) [ {…}, {…}, {…} ]
+​
+0: Object { title: "How to code", author: "Zach" }
+​
+1: Object { title: "What is Vim?", author: "Zach" }
+​
+2: Object { title: "How do loops work in JavaScript?", author: "Zach" }
+​
+length: 3
+​
+<prototype>: Array []
+
+
+// JS Match String Method
+
+const regex = /[a-z]+/
+const myString = 'hsfjfjJDEdLDMdmmMdndsjwj39040340NDajdsnssrrnw93249243brwnwnds';
+myString.match(regex) //first method
+Array [ "hsfjfj" ]
+
+regex.exec(myString); // second method
+Array [ "hsfjfj" ]
+
+
+// Array Methods
+
+// JS pop() / push() / unshift() / shift() array method
+
+const arr = [1, 2, 3, 5, 6]
+arr.pop()
+6
+arr.pop()
+5
+arr
+Array(3) [ 1, 2, 3 ]
+
+arr.push(4, 5, 6)
+6
+arr
+Array(6) [ 1, 2, 3, 4, 5, 6 ]
+
+arr.unshift(0)
+7
+arr
+Array(7) [ 0, 1, 2, 3, 4, 5, 6 ]
+
+arr.shift()
+0
+arr
+Array(6) [ 1, 2, 3, 4, 5, 6 ]
+
+arr.unshift(0)
+7
+arr
+Array(7) [ 0, 1, 2, 3, 4, 5, 6 ]
+
+// JS slice array method
+
+const arr = [0, 1, 2, 3, 4, 5, 6];
+undefined
+const copyArr = arr.slice();
+undefined
+copyArr
+Array(7) [ 0, 1, 2, 3, 4, 5, 6 ]
+
+const anotherCopy = copyArr.slice(3);
+undefined
+anotherCopy
+Array(4) [ 3, 4, 5, 6 ]
+
+// JS Splice Array Method 
+
+const arr = [1, 2, 3, 'opps', 4, 5, 6];
+undefined
+arr.splice(3, 1, 3.5)
+Array [ "opps" ]
+
+arr
+
+Array(7) [ 1, 2, 3, 3.5, 4, 5, 6 ]
+
+// JS indexOf() Array Method
+
+const arr = [1, 2, 3, 3.5, 4, 5, 6]
+undefined
+arr.indexOf(3.5)
+3
+arr[arr.indexOf(3.5)]  // this returns the value not the index
+3.5 
+
+// JS FindIndex Array method
+
+const moreComplexArr = [
+    {
+      firstName: 'Bob',
+      lastName: 'smith'
+    },
+        {
+            firstName: 'Alice',
+            lastName: 'smith'
+        },
+        {
+            firstName: 'Jon',
+            lastName: 'Smith'
+        },
+        {
+            firstName: 'Jon',
+            lastName: 'Doe'
+        }
+]; 
+
+
+moreComplexArr.findIndex((arrItem) => {
+        return arrItem.lastName !== 'smith'
+});
+2 
+
+// JS Map Object Method 
+
+const blogPostsFromDatabase = [
+  {
+        title: 'I want to learn good things',
+        category: 'Uncategorized'
+    },
+    {
+        title: 'I want to learn great things',
+        category: 'Uncategorized'
+    },
+    {
+        title: 'I want to learn GODLY things',
+        category: 'Uncategorized'
+    },
+];
+
+blogPostsFromDatabase.map(arrItem => {
+    arrItem.category = 'Web development'
+    return arrItem;
+});
+Array(3) [ {…}, {…}, {…} ]
+
+//JS ForEach Array Method
+
+const arr = [1, 2, 3];
+
+arr.forEach(arrItem => {
+    console.log(arrItem);
+});
+1
+2
+3
+
+const arr = [1, 2, 3];
+
+arr.forEach((arrItem, index) => {
+    console.log(arrItem);
+    console.log(index);…
+1 // arrItem
+0 // corresponding index number 
+2 // arrItem
+1 // corresponding index number
+3 // arrItem
+2 // corresponding index number
+
+// JS Includes Array Method 
+
+// 1st Method
+const myColor = ['blue', 'red', 'purple', 'orange', 'green'];
+undefined
+let orangeExists = false;
+for (let i = 0; i < myColor.length; i++){
+    if(myColor[i] === 'orange'){
+        orangeExists = true;
+}
+}
+
+console.log(orangeExists);
+true
+
+// 2nd Method
+
+myColor.forEach(color => {
+    if(color === 'orange'){
+        orangeExists = true
+    }
+});
+undefined
+orangeExists
+true 
+
+// 3rd Method ... Main Method
+
+myColor.includes('orange');
+true 
+
+// 4th Method
+
+myColor.includes('orange');
+true
+myColor.indexOf('orange');
+3
+myColor.indexOf('orange') !== -1
+true 
+
+// JS Filter Array Method
+
+const allOrders = [
+    {
+        productName: 'Tea pot',
+        isDigital: false,
+        isCancelled: false,
+        isOpen: false
+    },
+    {
+        productName: 'Blue Gildan Mens Hoodie',
+        isDigital: false,
+        isCancelled: true,
+        isOpen: false
+    },
+    {
+        productName: 'Code complete kindle book',
+        isDigital: true,
+        isCancelled: true,
+        isOpen: false
+    },
+    {
+        productName: 'Atomic kindle book',
+        isDigital: true,
+        isCancelled: false,
+        isOpen: false
+    },
+];
+undefined
+const digitalOrders = allOrders.filter(arrItem => {
+    return arrItem.isDigital;
+});
+undefined
+digitalOrders
+Array [ {…}, {…} ]
+​
+0: Object { productName: "Code complete kindle book", isDigital: true, isCancelled: true, … }
+​
+1: Object { productName: "Atomic kindle book", isDigital: true, isCancelled: false, … }
+​
+length: 2
+​
+<prototype>: Array []
+
+// 2nd Method
+
+const digitalCancelledOrders = allOrders.filter((orderItems) => {
+    return orderItems.isDigital && orderItems.isCancelled;
+});
+undefined
+digitalCancelledOrders
+Array [ {…} ]
+​
+0: Object { productName: "Code complete kindle book", isDigital: true, isCancelled: true, … }
+​
+length: 1
+​
+<prototype>: Array []
+
+// JS Reduce Array Method
+
+// Understand the reduce method
+
+const arr = [10, 20, 30, 25, 14];
+let sum = 0;
+for (let i = 0; i < arr.length; i++){
+     sum += arr[i];
+}
+
+console.log(sum);
+99
+
+
+// Reduce Method
+const arr = [10, 20, 30, 25, 14];
+undefined
+function reduceCallback(sum, arritem){
+    return sum += arritem
+}
+
+const result = arr.reduce(reduceCallback, 0);
+undefined
+result
+99 
+
+// Using Reduce Method to Calculate means
+const arr = [10, 20, 30, 14, 25];
+undefined
+arr.reduce((sum, arrItem) => sum += arrItem, 0) / arr.length
+19.8 
+
+// Math Method 
+
+
+Math.PI
+3.141592653589793
+Math.E
+2.718281828459045
+Math.abs(-84849)
+84849
+Math.ceil(Math.PI)
+4
+Math.floor(Math.PI)
+3
+Math.round(Math.PI)
+3
+Math.min(3, 4, 5, 6)
+3
+Math.max(3, 4, 5, 6)
+6
+
+Math.random()
+0.18179218702849886
+Math.random()
+0.5677849157909506 
+
+// JS Math Method
+
+const randomNumber = Math.random()
+undefined
+randomNumber
+0.19465548652142262
+const largerNumber = randomNumber * 100
+undefined
+largerNumber
+19.46554865214226
+Math.floor(largerNumber)
+19
+const arr = ['some', 'have', 'food', 'but', 'cant', 'eat']
+undefined
+const randomIndex = Math.floor(Math.random() * arr.length)
+undefined
+arr[randomIndex]
+"food" 
