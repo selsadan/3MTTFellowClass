@@ -1239,3 +1239,7 @@ myNumber2.toUpperCase();
 Uncaught TypeError: myNumber2.toUpperCase is not a function
     <anonymous> debugger eval code:1
 debugger eval code:1:11
+
+//
+<h1>To inform you that am happy to be back</h1>
+<h2>Experiencing some errors</h2>
