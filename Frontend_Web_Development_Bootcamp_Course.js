@@ -1142,7 +1142,7 @@ let sum = 0;
 for (let i = 0; i < arr.length; i++){
      sum += arr[i];
 }
-
+	
 console.log(sum);
 99
 
@@ -1159,7 +1159,7 @@ undefined
 result
 99 
 
-// Using Reduce Method to Calculate means
+// Using Reduce Method to Calculate mean
 const arr = [10, 20, 30, 14, 25];
 undefined
 arr.reduce((sum, arrItem) => sum += arrItem, 0) / arr.length
@@ -1222,7 +1222,7 @@ Uncaught ReferenceError: anotherNumber is not defined
     <anonymous> debugger eval code:1
 debugger eval code:1:1
 
-//SyntaxError
+	//SyntaxError
 const myObject = {
     prop1: 'Value1';
     prop2: 'value2';
@@ -1243,3 +1243,44 @@ debugger eval code:1:11
 //
 <h1>To inform you that am happy to be back</h1>
 <h2>Experiencing some errors</h2>
+
+// Null, Undefined, NaN(Not a Number)
+
+const myString = 'Not a number';
+undefined
+Number(myString)
+NaN
+
+myString
+"Not a number"
+
+myString * 4
+NaN
+
+let num = null;
+undefined
+
+num === false
+false
+
+if (num){
+  console.log("Num can be reached")
+} else{
+
+    console.log("Num cannot be reached")…
+Num cannot be reached
+
+let myVar
+undefined
+
+console.log(myVar)
+undefined debugger eval code:1:9
+undefined 
+
+if (myVar){
+    console.log('I can reach myVar')
+} else {
+    console.log("I cannot reach myVar")
+}
+I cannot reach myVar debugger eval code:4:10
+undefined
