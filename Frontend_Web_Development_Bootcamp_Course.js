@@ -1418,4 +1418,6 @@ function isValidWalk(walk){
 				sOffset += 1;
 		}
 	});
+
+	return nOffset - sOffset === 0 && wOffset - eOffset === 0;
 }
