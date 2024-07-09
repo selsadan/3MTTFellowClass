@@ -1390,3 +1390,32 @@ function list(names){
 
 	return finalString;
 }
+
+// Take a Ten Minutes Walk
+
+function isValidWalk(walk){
+	if(walk !== 10){
+		return false;
+	}
+
+	let nOffset = 0;
+	let wOffset = 0;
+	let eOffset = 0;
+	let sOffset = 0;
+
+	walk,forEach(direction => {
+		switch (direction){
+			case 'n':
+				nOffset += 1;
+				break;
+			case 'w':
+				wOffset += 1;
+				break;
+			case 'e':
+				eOffset += 1;
+				break;
+			case 's':
+				sOffset += 1;
+		}
+	});
+}
