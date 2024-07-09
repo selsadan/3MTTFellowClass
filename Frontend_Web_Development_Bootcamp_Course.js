@@ -1284,3 +1284,86 @@ if (myVar){
 }
 I cannot reach myVar debugger eval code:4:10
 undefined
+
+//Lesson 6 Kata challenges #fullstackroadmap
+
+// Kata 1. List Filtering 
+
+
+// 1st Method without refactoring 
+
+Function filter_list (numArr){
+	return numArr.filter(callbackFunc);
+}
+
+Function callbackFunc (arrItem){
+	// 1. It is a number
+	// 2. It is positive
+	if (arrItem >= 0 && typeof arrItem === 'number'){
+		return true; 
+	} else {
+		return false;
+	}
+}
+
+
+// 2nd method with refacoring 
+
+function filter_list (numArr){
+	return numArr.filter(callbackFunc)
+}
+
+function callbackFunc (arrItem){
+	return arrItem >= 0 && typeof arrItem === 'number';
+}
+
+// 3rd method with refactoring 
+
+function filter_list(numArr){
+	return numArr.filter((arrItem) => {
+		arrItem >= 0 && typeof arrItem === 'number';
+	});
+}
+
+// 4th method with refacoring 
+
+function filter_list(numArr){
+	return numArr.filter(arrItem => arrItem >= 0 && typeof arrItem === 'number')
+}
+
+// Kata 2. Array.diff
+
+// 1st Method 
+function arrayDiff(a, b){
+  if(a.length === 0){
+    return [];
+  }	
+  
+  if(b.length === 0){
+    return a;
+  }
+  
+  let newA = a;
+  let newB = b;
+  
+  
+  // We have found this element in both arrays.
+  
+  a.forEach((arrItem, arrIndex) => {
+    
+    const aCopy = newA.slice();
+    const bCopy = newB.slice();
+    
+    if(b.includes(arrItem)){
+      newA = aCopy.filter(item => item !== arrItem);
+      newB = bCopy.filter(item => item !== arrItem);
+    }
+  });
+  
+  // console.log(newA);
+  return newA;
+}
+
+
+
+// Kata 3. Format a string of name like 'Bart, Lisa & Maggie'
