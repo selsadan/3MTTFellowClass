@@ -1434,5 +1434,12 @@ function persistent(num){
 	const arrVersion = strVersion.split('');
 	const multipliacationValue = arrVersion.reduce((acc, num) => acc *= num);
 
-	
+	if (multipliacationValue >= 10){
+		return 1 + persistent(multipliacationValue);
+	} else {
+		return 1;
+	}
 }
+
+// Regex validate PIN code
+
