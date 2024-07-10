@@ -1391,10 +1391,10 @@ function list(names){
 	return finalString;
 }
 
-// Take a Ten Minutes Walk
+// Kata 4. Take a Ten Minutes Walk
 
 function isValidWalk(walk){
-	if(walk !== 10){
+	if(walk.length !== 10){
 		return false;
 	}
 
@@ -1421,3 +1421,6 @@ function isValidWalk(walk){
 
 	return nOffset - sOffset === 0 && wOffset - eOffset === 0;
 }
+
+
+// Kata 5. Persistent Burgger.
