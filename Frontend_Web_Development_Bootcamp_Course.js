@@ -1424,3 +1424,15 @@ function isValidWalk(walk){
 
 
 // Kata 5. Persistent Burgger.
+
+function persistent(num){
+	if(num < 10){
+		return 0;
+	}
+
+	const strVersion = num.toString();
+	const arrVersion = strVersion.split('');
+	const multipliacationValue = arrVersion.reduce((acc, num) => acc *= num);
+
+	
+}
