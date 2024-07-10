@@ -1443,3 +1443,25 @@ function persistent(num){
 
 // Regex validate PIN code
 
+function validatePin(pin){
+	const fourDigitsRegex = /(^[0-9]{4}&)/
+	const sixDigitsRegex = /(^[0-9]{6}&)/
+
+	const result1 = pin.match(fourDigitsRegex);
+	const result2 = pin.match(sixDigitsRegex);
+{/* 
+	if(result1 === null && result2 === null){
+		return false;
+	} else{
+		return true;
+	}
+	 */}
+
+	{/* if(result1 === null && result2 === null){
+		return false;
+	} else{
+		return true;
+	} */}
+
+	return !(!result1 && result2);
+}
