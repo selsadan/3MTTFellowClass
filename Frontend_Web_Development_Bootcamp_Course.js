@@ -1425,7 +1425,7 @@ function isValidWalk(walk){
 
 // Kata 5. Persistent Burgger.
 
-function persistent(num){
+function persistence(num){
 	if(num < 10){
 		return 0;
 	}
@@ -1435,7 +1435,7 @@ function persistent(num){
 	const multipliacationValue = arrVersion.reduce((acc, num) => acc *= num);
 
 	if (multipliacationValue >= 10){
-		return 1 + persistent(multipliacationValue);
+		return 1 + persistence(multipliacationValue);
 	} else {
 		return 1;
 	}
@@ -1463,5 +1463,5 @@ function validatePin(pin){
 		return true;
 	} */}
 
-	return !(!result1 && result2);
+	return !(!result1 && result2); 
 }
