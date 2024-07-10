@@ -1443,9 +1443,9 @@ function persistence(num){
 
 // Regex validate PIN code
 
-function validatePin(pin){
-	const fourDigitsRegex = /(^[0-9]{4}&)/
-	const sixDigitsRegex = /(^[0-9]{6}&)/
+function validatePIN(pin){
+	const fourDigitsRegex = /(^[0-9]{4}$)/
+	const sixDigitsRegex = /(^[0-9]{6}$)/
 
 	const result1 = pin.match(fourDigitsRegex);
 	const result2 = pin.match(sixDigitsRegex);
