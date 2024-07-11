@@ -1465,3 +1465,59 @@ function validatePIN(pin){
 
 	return !(!result1 && result2); 
 }
+
+// Regex count lowercase letters.
+
+function lowercaseCount(str){
+	const result = str.match(/[a-z]/g);
+
+	return result ? result.length : 0;
+}
+
+// Is the date today.
+
+function isToday(date){
+	const checkedDay = date.getDate();
+	const checkedMonth = date.getMonth();
+	const checkedYear = date.getFullYear();
+
+	const today = new Date();
+
+	const todayDay = today.getDate();
+	const todayMonth = today.getMonth();
+	const todayYear = today.getFullYear();
+
+	return checkedDay === todayDay && checkedMonth === todayMonth && checkedYear === todayYear;
+}
+
+// Alternative Capitalization.
+
+function capitalize(s){
+	const arr1 = s.split();
+	const arr2 = s.split();
+
+	// Even Capitlization
+	arr1.forEach((item, index, original) => {
+		if(index % 2 === 0){
+			original[index] = item.toUpperCase();
+		}
+	}); 
+
+	// Odd Capitlization
+	arr2.forEach((item, index, original) => {
+		if(index % 2 !== 0){
+			original[index] = item.toUpperCase();
+		}
+	});
+	
+	const arr1Str = arr1.join('');
+	const arr2Str = arr2.join('');
+
+	return [arr1Str, arr2Str];
+}
+
+// Form the largest.
+
+function maxNumber(n){
+	return +n.toString().split('').sort((first, second) => second - first).join('');
+}
