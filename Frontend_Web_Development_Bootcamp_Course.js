@@ -1369,26 +1369,26 @@ function arrayDiff(a, b){
 
 function list(names){
 
-	let finalString = '';
+let finalString = '';
 
-	if (names.length === 1){
-		return names[0].name
+if (names.length === 1){
+	return names[0].name
+}
+
+names.forEach((arrItem, arrIndex) => {
+
+	const name = arrItem.name
+
+	if (arrIndex === names.length  - 1){
+		finalString = finalString + ' & ' + name;
+	} else if(arrIndex === names.length - 2){
+		finalString = finalString + name;
+	} else{
+		finalString = finalString + name + ', '
 	}
+});
 
-	names.forEach((arrItem, arrIndex) => {
-
-		const name = arrItem.name
-
-		if (arrIndex === names.length  -1 ){
-			finalString = finalString + name + '& ';
-		} else if(arrIndex === names.length - 2){
-			finalString = finalString + name;
-		} else{
-			finalString = finalString + name + ', '
-		}
-	});
-
-	return finalString;
+return finalString;
 }
 
 // Kata 4. Take a Ten Minutes Walk
@@ -1441,7 +1441,7 @@ function persistence(num){
 	}
 }
 
-// Regex validate PIN code
+// kata 6. Regex validate PIN code
 
 function validatePIN(pin){
 	const fourDigitsRegex = /(^[0-9]{4}$)/
@@ -1466,7 +1466,7 @@ function validatePIN(pin){
 	return !(!result1 && result2); 
 }
 
-// Regex count lowercase letters.
+// Kata 7. Regex count lowercase letters.
 
 function lowercaseCount(str){
 	const result = str.match(/[a-z]/g);
@@ -1474,7 +1474,7 @@ function lowercaseCount(str){
 	return result ? result.length : 0;
 }
 
-// Is the date today.
+// Kata 8. Is the date today.
 
 function isToday(date){
 	const checkedDay = date.getDate();
@@ -1490,11 +1490,11 @@ function isToday(date){
 	return checkedDay === todayDay && checkedMonth === todayMonth && checkedYear === todayYear;
 }
 
-// Alternative Capitalization.
+// Kata 9. Alternative Capitalization.
 
 function capitalize(s){
-	const arr1 = s.split();
-	const arr2 = s.split();
+	const arr1 = s.split('');
+	const arr2 = s.split('');
 
 	// Even Capitlization
 	arr1.forEach((item, index, original) => {
@@ -1516,7 +1516,7 @@ function capitalize(s){
 	return [arr1Str, arr2Str];
 }
 
-// Form the largest.
+// Kata 9. Form the largest.
 
 function maxNumber(n){
 	return +n.toString().split('').sort((first, second) => second - first).join('');
